@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>K Premium Cleaning Services | Los Angeles</title>
+
+  <meta name="description" content="Professional commercial, office, move-in/move-out and post-construction cleaning services in Los Angeles and surrounding areas.">
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    :root {
+
+      --navy: #062b4d;
+
+      --navy-dark: #031d35;
+
+      --gold: #c9953d;
+
+      --gold-light: #e6c47d;
+
+      --white: #ffffff;
+
+      --cream: #f8f6f1;
+
+      --text: #243445;
+
+      --gray: #65717d;
+
+    }
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+    body {
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      color: var(--text);
+
+      background: var(--white);
+
+      line-height: 1.6;
+
+    }
+
+    a {
+
+      text-decoration: none;
+
+    }
+
+    .topbar {
+
+      background: var(--gold);
+
+      color: var(--navy-dark);
+
+      text-align: center;
+
+      padding: 10px 15px;
+
+      font-weight: 800;
+
+      font-size: 14px;
+
+      letter-spacing: .5px;
+
+    }
+
+    header {
+
+      background: white;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 100;
+
+      box-shadow: 0 2px 14px rgba(0,0,0,.08);
+
+    }
+
+    nav {
+
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding: 15px 20px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+
+    }
+
+    .brand {
+
+      color: var(--navy);
+
+      font-family: Georgia, serif;
+
+      font-size: 27px;
+
+      font-weight: bold;
+
+      line-height: 1;
+
+    }
+
+    .brand span {
+
+      display: block;
+
+      color: var(--gold);
+
+      font-family: Arial, sans-serif;
+
+      font-size: 10px;
+
+      letter-spacing: 4px;
+
+      margin-top: 6px;
+
+    }
+
+    .nav-call {
+
+      background: var(--navy);
+
+      color: white;
+
+      padding: 11px 17px;
+
+      border-radius: 5px;
+
+      font-size: 14px;
+
+      font-weight: bold;
+
+    }
+
+    .hero {
+
+      min-height: 650px;
+
+      background:
+
+        linear-gradient(100deg, rgba(3,29,53,.96) 0%, rgba(6,43,77,.90) 52%, rgba(6,43,77,.65) 100%);
+
+      color: white;
+
+      display: flex;
+
+      align-items: center;
+
+      position: relative;
+
+      overflow: hidden;
+
+    }
+
+    .hero:after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 420px;
+
+      height: 760px;
+
+      border: 22px solid var(--gold);
+
+      border-radius: 50%;
+
+      right: -260px;
+
+      top: -80px;
+
+      opacity: .8;
+
+    }
+
+    .hero-inner {
+
+      width: 100%;
+
+      max-width: 1150px;
+
+      margin: auto;
+
+      padding: 80px 22px;
+
+      position: relative;
+
+      z-index: 2;
+
+    }
+
+    .eyebrow {
+
+      color: var(--gold-light);
+
+      text-transform: uppercase;
+
+      letter-spacing: 3px;
+
+      font-weight: bold;
+
+      font-size: 13px;
+
+      margin-bottom: 15px;
+
+    }
+
+    .hero h1 {
+
+      font-family: Georgia, serif;
+
+      font-size: clamp(44px, 8vw, 78px);
+
+      line-height: .98;
+
+      max-width: 800px;
+
+      margin-bottom: 25px;
+
+    }
+
+    .hero h1 span {
+
+      color: var(--gold-light);
+
+    }
+
+    .hero p {
+
+      font-size: 20px;
+
+      max-width: 660px;
+
+      color: #edf3f7;
+
+      margin-bottom: 32px;
+
+    }
+
+    .buttons {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 13px;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 15px 23px;
+
+      border-radius: 5px;
+
+      font-weight: 800;
+
+      transition: .2s;
+
+    }
+
+    .btn-gold {
+
+      background: var(--gold);
+
+      color: var(--navy-dark);
+
+    }
+
+    .btn-white {
+
+      border: 2px solid white;
+
+      color: white;
+
+    }
+
+    .btn:hover {
+
+      transform: translateY(-2px);
+
+    }
+
+    .trust {
+
+      background: white;
+
+      box-shadow: 0 8px 30px rgba(0,0,0,.09);
+
+      max-width: 1050px;
+
+      margin: -45px auto 0;
+
+      position: relative;
+
+      z-index: 5;
+
+      display: grid;
+
+      grid-template-columns: repeat(4,1fr);
+
+      border-radius: 8px;
+
+      overflow: hidden;
+
+    }
+
+    .trust div {
+
+      text-align: center;
+
+      padding: 25px 10px;
+
+      border-right: 1px solid #eee;
+
+      color: var(--navy);
+
+      font-weight: 800;
+
+    }
+
+    .trust div:last-child {
+
+      border-right: none;
+
+    }
+
+    .trust small {
+
+      display: block;
+
+      color: var(--gold);
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 5px;
+
+    }
+
+    section {
+
+      padding: 85px 20px;
+
+    }
+
+    .container {
+
+      max-width: 1100px;
+
+      margin: auto;
+
+    }
+
+    .section-heading {
+
+      text-align: center;
+
+      max-width: 720px;
+
+      margin: 0 auto 45px;
+
+    }
+
+    .section-heading small {
+
+      color: var(--gold);
+
+      font-weight: bold;
+
+      text-transform: uppercase;
+
+      letter-spacing: 3px;
+
+    }
+
+    .section-heading h2 {
+
+      color: var(--navy);
+
+      font-family: Georgia, serif;
+
+      font-size: 42px;
+
+      line-height: 1.1;
+
+      margin: 10px 0 15px;
+
+    }
+
+    .section-heading p {
+
+      color: var(--gray);
+
+    }
+
+    .services {
+
+      background: var(--cream);
+
+    }
+
+    .service-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(4,1fr);
+
+      gap: 18px;
+
+    }
+
+    .card {
+
+      background: white;
+
+      padding: 32px 24px;
+
+      border-radius: 8px;
+
+      border-top: 4px solid var(--gold);
+
+      box-shadow: 0 8px 25px rgba(0,0,0,.06);
+
+    }
+
+    .icon {
+
+      width: 52px;
+
+      height: 52px;
+
+      background: var(--navy);
+
+      color: var(--gold-light);
+
+      border-radius: 50%;
+
+      display: grid;
+
+      place-items: center;
+
+      font-size: 25px;
+
+      margin-bottom: 20px;
+
+    }
+
+    .card h3 {
+
+      color: var(--navy);
+
+      font-size: 20px;
+
+      margin-bottom: 10px;
+
+    }
+
+    .card p {
+
+      color: var(--gray);
+
+      font-size: 15px;
+
+    }
+
+    .about-grid {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 60px;
+
+      align-items: center;
+
+    }
+
+    .about-design {
+
+      min-height: 430px;
+
+      background: var(--navy);
+
+      border-radius: 10px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 55px 40px;
+
+      color: white;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+    }
+
+    .about-design:after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 320px;
+
+      height: 500px;
+
+      border: 14px solid var(--gold);
+
+      border-radius: 50%;
+
+      right: -210px;
+
+      top: -30px;
+
+    }
+
+    .big-k {
+
+      font-family: Georgia, serif;
+
+      font-size: 130px;
+
+      color: white;
+
+      line-height: .8;
+
+    }
+
+    .about-design strong {
+
+      color: var(--gold-light);
+
+      font-size: 24px;
+
+      letter-spacing: 2px;
+
+      margin-top: 20px;
+
+    }
+
+    .about-copy h2 {
+
+      color: var(--navy);
+
+      font-family: Georgia, serif;
+
+      font-size: 42px;
+
+      line-height: 1.1;
+
+      margin-bottom: 20px;
+
+    }
+
+    .about-copy p {
+
+      color: var(--gray);
+
+      margin-bottom: 17px;
+
+    }
+
+    .qualities {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 12px;
+
+      margin-top: 25px;
+
+    }
+
+    .qualities div {
+
+      color: var(--navy);
+
+      font-weight: bold;
+
+    }
+
+    .qualities div:before {
+
+      content: "✓";
+
+      color: var(--gold);
+
+      margin-right: 8px;
+
+    }
+
+    .cta {
+
+      background: var(--navy);
+
+      color: white;
+
+      text-align: center;
+
+    }
+
+    .cta h2 {
+
+      font-family: Georgia, serif;
+
+      font-size: 44px;
+
+      line-height: 1.1;
+
+      margin-bottom: 15px;
+
+    }
+
+    .cta p {
+
+      color: #dbe5ed;
+
+      margin: 0 auto 30px;
+
+      max-width: 650px;
+
+    }
+
+    .contact {
+
+      background: var(--cream);
+
+    }
+
+    .contact-box {
+
+      max-width: 850px;
+
+      margin: auto;
+
+      background: white;
+
+      box-shadow: 0 10px 35px rgba(0,0,0,.08);
+
+      border-radius: 10px;
+
+      overflow: hidden;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1.4fr;
+
+    }
+
+    .contact-left {
+
+      background: var(--navy);
+
+      color: white;
+
+      padding: 40px 30px;
+
+    }
+
+    .contact-left h3 {
+
+      font-family: Georgia, serif;
+
+      font-size: 29px;
+
+      margin-bottom: 25px;
+
+    }
+
+    .contact-left p {
+
+      margin: 15px 0;
+
+    }
+
+    .contact-left a {
+
+      color: white;
+
+    }
+
+    .contact-right {
+
+      padding: 40px 35px;
+
+    }
+
+    .contact-right h3 {
+
+      color: var(--navy);
+
+      font-size: 27px;
+
+      margin-bottom: 12px;
+
+    }
+
+    .contact-right p {
+
+      color: var(--gray);
+
+      margin-bottom: 25px;
+
+    }
+
+    footer {
+
+      background: var(--navy-dark);
+
+      color: #cbd7df;
+
+      padding: 35px 20px;
+
+      text-align: center;
+
+      font-size: 14px;
+
+    }
+
+    footer strong {
+
+      color: var(--gold-light);
+
+    }
+
+    @media (max-width: 800px) {
+
+      .hero {
+
+        min-height: 600px;
+
+      }
+
+      .hero h1 {
+
+        font-size: 49px;
+
+      }
+
+      .hero p {
+
+        font-size: 18px;
+
+      }
+
+      .trust {
+
+        margin: 0;
+
+        border-radius: 0;
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      .trust div {
+
+        border-bottom: 1px solid #eee;
+
+      }
+
+      .service-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .about-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+      }
+
+      .contact-box {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .section-heading h2,
+
+      .about-copy h2,
+
+      .cta h2 {
+
+        font-size: 35px;
+
+      }
+
+    }
+
+    @media (max-width: 450px) {
+
+      .nav-call {
+
+        font-size: 12px;
+
+        padding: 9px 11px;
+
+      }
+
+      .brand {
+
+        font-size: 21px;
+
+      }
+
+      .hero h1 {
+
+        font-size: 43px;
+
+      }
+
+      .buttons .btn {
+
+        width: 100%;
+
+        text-align: center;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="topbar">
+
+    FREE ESTIMATES • CALL TODAY: (714) 333-8207
+
+  </div>
+
+  <header>
+
+    <nav>
+
+      <div class="brand">
+
+        K PREMIUM
+
+        <span>CLEANING SERVICES</span>
+
+      </div>
+
+      <a class="nav-call" href="tel:+17143338207">
+
+        CALL NOW
+
+      </a>
+
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <div class="eyebrow">
+
+          Professional Cleaning • Los Angeles
+
+        </div>
+
+        <h1>
+
+          Clean Spaces.<br>
+
+          <span>Brighter Business.</span>
+
+        </h1>
+
+        <p>
+
+          Professional, reliable and detail-oriented cleaning
+
+          services for businesses and properties throughout
+
+          Los Angeles and surrounding areas.
+
+        </p>
+
+        <div class="buttons">
+
+          <a class="btn btn-gold" href="tel:+17143338207">
+
+            CALL FOR A FREE ESTIMATE
+
+          </a>
+
+          <a class="btn btn-white"
+
+             href="mailto:kpremiumla@gmail.com?subject=Cleaning%20Estimate">
+
+            EMAIL US
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="trust">
+
+      <div>
+
+        <small>K Premium</small>
+
+        Professional
+
+      </div>
+
+      <div>
+
+        <small>Service</small>
+
+        Reliable
+
+      </div>
+
+      <div>
+
+        <small>Quality</small>
+
+        Detail-Oriented
+
+      </div>
+
+      <div>
+
+        <small>Relationship</small>
+
+        Trusted
+
+      </div>
+
+    </div>
+
+    <section class="services" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <small>Our Services</small>
+
+          <h2>Professional Cleaning Solutions</h2>
+
+          <p>
+
+            Cleaning services designed to help maintain clean,
+
+            welcoming and professional spaces.
+
+          </p>
+
+        </div>
+
+        <div class="service-grid">
+
+          <div class="card">
+
+            <div class="icon">▦</div>
+
+            <h3>Commercial Cleaning</h3>
+
+            <p>
+
+              Professional cleaning solutions for commercial
+
+              properties and business environments.
+
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">⌂</div>
+
+            <h3>Move-In / Move-Out</h3>
+
+            <p>
+
+              Thorough cleaning to help prepare a property
+
+              before moving in or after moving out.
+
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">◆</div>
+
+            <h3>Post Construction</h3>
+
+            <p>
+
+              Detailed cleanup after construction or renovation
+
+              to prepare the space for use.
+
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <div class="icon">▣</div>
+
+            <h3>Office Cleaning</h3>
+
+            <p>
+
+              Dependable cleaning for offices and workspaces
+
+              to maintain a polished professional environment.
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <div class="container about-grid">
+
+        <div class="about-design">
+
+          <div class="big-k">K</div>
+
+          <strong>PREMIUM</strong>
+
+          <div>CLEANING SERVICES</div>
+
+        </div>
+
+        <div class="about-copy">
+
+          <div class="eyebrow" style="color:#c9953d;">
+
+            K Premium Cleaning Services
+
+          </div>
+
+          <h2>
+
+            Attention to Detail You Can See
+
+          </h2>
+
+          <p>
+
+            We provide professional cleaning services with an
+
+            emphasis on reliability, attention to detail and
+
+            quality service.
+
+          </p>
+
+          <p>
+
+            Serving Los Angeles and surrounding areas, K Premium
+
+            Cleaning Services helps businesses and properties
+
+            maintain spaces that feel clean, organized and ready
+
+            to welcome employees, clients and visitors.
+
+          </p>
+
+          <div class="qualities">
+
+            <div>Professional</div>
+
+            <div>Reliable</div>
+
+            <div>Detail-Oriented</div>
+
+            <div>Trusted Service</div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="cta">
+
+      <div class="container">
+
+        <div class="eyebrow">Ready for a cleaner space?</div>
+
+        <h2>Let's Keep Your Business Shining.</h2>
+
+        <p>
+
+          Contact K Premium Cleaning Services today to discuss
+
+          your cleaning needs and request an estimate.
+
+        </p>
+
+        <div class="buttons" style="justify-content:center;">
+
+          <a class="btn btn-gold" href="tel:+17143338207">
+
+            (714) 333-8207
+
+          </a>
+
+          <a class="btn btn-white"
+
+             href="mailto:kpremiumla@gmail.com?subject=Cleaning%20Estimate">
+
+            GET AN ESTIMATE
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="contact">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <small>Contact</small>
+
+          <h2>Request Your Free Estimate</h2>
+
+        </div>
+
+        <div class="contact-box">
+
+          <div class="contact-left">
+
+            <h3>K Premium</h3>
+
+            <p>
+
+              📞
+
+              <a href="tel:+17143338207">
+
+                (714) 333-8207
+
+              </a>
+
+            </p>
+
+            <p>
+
+              ✉️
+
+              <a href="mailto:kpremiumla@gmail.com">
+
+                kpremiumla@gmail.com
+
+              </a>
+
+            </p>
+
+            <p>
+
+              📍 Los Angeles, CA<br>
+
+              Serving surrounding areas
+
+            </p>
+
+          </div>
+
+          <div class="contact-right">
+
+            <h3>How can we help?</h3>
+
+            <p>
+
+              Contact us to discuss your property, cleaning
+
+              needs and scheduling.
+
+            </p>
+
+            <a class="btn btn-gold"
+
+               href="mailto:kpremiumla@gmail.com?subject=Free%20Cleaning%20Estimate">
+
+              REQUEST AN ESTIMATE
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+    © 2026 <strong>K Premium Cleaning Services</strong><br>
+
+    Los Angeles, California • (714) 333-8207
+
+  </footer>
+
+</body>
+
+</html>
