@@ -10,11 +10,17 @@
 
 <title>K Premium Cleaning Services | Los Angeles</title>
 
-<meta name="description" content="Professional residential and commercial cleaning services in Los Angeles and surrounding areas.">
-
 <style>
 
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+
+  box-sizing:border-box;
+
+  margin:0;
+
+  padding:0;
+
+}
 
 :root{
 
@@ -22,11 +28,17 @@
 
   --dark:#062f57;
 
-  --gold:#c7963d;
+  --gold:#c99a42;
 
-  --light:#f5f8fc;
+  --light:#f6f8fb;
 
-  --text:#102f50;
+  --text:#102d4d;
+
+}
+
+html{
+
+  scroll-behavior:smooth;
 
 }
 
@@ -40,33 +52,53 @@ body{
 
 }
 
-.topbar{
+a{
 
-  background:var(--dark);
+  color:inherit;
 
-  color:white;
-
-  text-align:center;
-
-  padding:10px 18px;
-
-  font-weight:700;
-
-  letter-spacing:1px;
-
-  display:flex;
-
-  justify-content:space-around;
-
-  gap:20px;
-
-  flex-wrap:wrap;
+  text-decoration:none;
 
 }
 
-header{
+img{
 
-  background:white;
+  display:block;
+
+  width:100%;
+
+}
+
+/* =========================
+
+   TOP BAR
+
+========================= */
+
+.topbar{
+
+  background:var(--navy);
+
+  color:#fff;
+
+  min-height:34px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+
+  font-size:14px;
+
+}
+
+.topbar-inner{
+
+  width:min(1180px,92%);
 
   display:flex;
 
@@ -74,67 +106,111 @@ header{
 
   align-items:center;
 
-  padding:18px 6%;
+}
+
+.top-phone{
+
+  letter-spacing:0;
 
 }
 
-.logo{
+/* =========================
+
+   HEADER
+
+========================= */
+
+header{
+
+  background:#fff;
+
+}
+
+.header-inner{
+
+  width:min(1180px,92%);
+
+  min-height:135px;
+
+  margin:auto;
 
   display:flex;
 
   align-items:center;
 
-  gap:12px;
+  justify-content:space-between;
+
+  gap:30px;
 
 }
 
-.logo-k{
+.logo{
+
+  width:255px;
+
+  flex-shrink:0;
+
+}
+
+.logo-mark{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+}
+
+.big-k{
 
   font-family:Georgia,serif;
 
-  font-size:78px;
+  font-size:82px;
+
+  line-height:.75;
 
   font-weight:bold;
 
   color:var(--navy);
 
-  line-height:.8;
-
 }
 
-.logo-star{
+.sparkle{
 
   color:var(--gold);
 
-  font-size:32px;
+  font-size:38px;
 
 }
 
-.logo-text strong{
+.logo-words strong{
 
   display:block;
 
   font-family:Georgia,serif;
 
-  font-size:28px;
-
-  letter-spacing:2px;
-
   color:var(--navy);
+
+  font-size:25px;
+
+  letter-spacing:1px;
 
 }
 
-.logo-text span{
+.logo-words span{
 
   display:block;
 
   color:var(--gold);
 
-  font-weight:bold;
+  font-weight:700;
+
+  font-size:14px;
 
   letter-spacing:4px;
 
-  margin-top:5px;
+  line-height:1.55;
 
 }
 
@@ -144,27 +220,177 @@ nav{
 
   align-items:center;
 
-  gap:28px;
+  gap:38px;
 
-  font-weight:600;
+  font-weight:700;
 
 }
 
-.call-btn,
+nav a{
 
-.primary-btn{
+  padding:12px 0;
+
+}
+
+nav a:first-child{
+
+  border-bottom:2px solid var(--gold);
+
+}
+
+.call-btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:10px;
+
+  padding:16px 27px;
 
   background:var(--navy);
 
   color:white;
 
-  padding:16px 24px;
+  border-radius:14px;
 
-  border-radius:12px;
+  font-weight:700;
 
-  display:inline-block;
+  white-space:nowrap;
 
-  font-weight:bold;
+}
+
+/* =========================
+
+   HERO
+
+========================= */
+
+.hero{
+
+  min-height:590px;
+
+  background:
+
+    linear-gradient(
+
+      90deg,
+
+      rgba(255,255,255,1) 0%,
+
+      rgba(255,255,255,.98) 40%,
+
+      rgba(255,255,255,.25) 67%,
+
+      rgba(255,255,255,.05) 100%
+
+    ),
+
+    url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1800&q=85");
+
+  background-size:cover;
+
+  background-position:center;
+
+}
+
+.hero-inner{
+
+  width:min(1180px,92%);
+
+  margin:auto;
+
+  min-height:590px;
+
+  display:flex;
+
+  align-items:center;
+
+}
+
+.hero-copy{
+
+  max-width:590px;
+
+}
+
+.eyebrow{
+
+  font-size:14px;
+
+  font-weight:800;
+
+  letter-spacing:5px;
+
+  margin-bottom:18px;
+
+}
+
+.hero h1{
+
+  font-family:Georgia,serif;
+
+  font-size:66px;
+
+  line-height:.96;
+
+  color:var(--navy);
+
+  margin-bottom:27px;
+
+}
+
+.hero p{
+
+  font-size:22px;
+
+  line-height:1.45;
+
+  max-width:550px;
+
+  margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+  display:flex;
+
+  gap:18px;
+
+  flex-wrap:wrap;
+
+}
+
+.primary-btn,
+
+.secondary-btn{
+
+  min-height:64px;
+
+  display:inline-flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:0 28px;
+
+  border-radius:13px;
+
+  font-size:18px;
+
+  font-weight:800;
+
+}
+
+.primary-btn{
+
+  color:#fff;
+
+  background:var(--navy);
 
 }
 
@@ -174,127 +400,61 @@ nav{
 
   border:2px solid var(--navy);
 
-  padding:14px 24px;
-
-  border-radius:12px;
-
-  display:inline-block;
-
-  font-weight:bold;
+  color:var(--navy);
 
 }
 
-a{
+.signature{
 
-  color:inherit;
+  text-align:right;
 
-  text-decoration:none;
+  margin-top:12px;
 
-}
+  margin-right:15px;
 
-.hero{
+  color:#8e6423;
 
-  min-height:480px;
+  font-family:cursive;
 
-  display:flex;
+  font-size:25px;
 
-  align-items:center;
-
-  padding:65px 6%;
-
-  background:
-
-    linear-gradient(90deg,
-
-    rgba(255,255,255,1) 0%,
-
-    rgba(255,255,255,.96) 42%,
-
-    rgba(255,255,255,.25) 100%),
-
-    url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=85");
-
-  background-size:cover;
-
-  background-position:center;
+  transform:rotate(-7deg);
 
 }
 
-.hero-content{
+/* =========================
 
-  max-width:620px;
+   FEATURES
 
-}
-
-.eyebrow{
-
-  letter-spacing:5px;
-
-  font-weight:bold;
-
-  font-size:14px;
-
-  margin-bottom:15px;
-
-}
-
-h1{
-
-  font-family:Georgia,serif;
-
-  font-size:58px;
-
-  line-height:1.02;
-
-  color:var(--dark);
-
-  margin-bottom:20px;
-
-}
-
-.hero p{
-
-  font-size:20px;
-
-  line-height:1.45;
-
-  max-width:520px;
-
-  margin-bottom:25px;
-
-}
-
-.hero-buttons{
-
-  display:flex;
-
-  gap:14px;
-
-  flex-wrap:wrap;
-
-}
+========================= */
 
 .features{
+
+  background:#fff;
+
+  padding:38px 0;
+
+}
+
+.features-inner{
+
+  width:min(1120px,94%);
+
+  margin:auto;
 
   display:grid;
 
   grid-template-columns:repeat(5,1fr);
 
-  text-align:center;
-
-  padding:32px 5%;
-
-  gap:10px;
-
 }
 
 .feature{
 
-  padding:10px;
+  text-align:center;
 
-  font-weight:bold;
+  padding:0 20px;
 
-  border-right:1px solid #ddd;
+  border-right:1px solid #e0e5ea;
 
 }
 
@@ -304,15 +464,17 @@ h1{
 
 }
 
-.icon{
+.icon-circle{
 
-  width:64px;
+  width:78px;
 
-  height:64px;
+  height:78px;
 
-  background:#edf5fc;
+  margin:0 auto 14px;
 
   border-radius:50%;
+
+  background:#edf5fc;
 
   display:flex;
 
@@ -320,103 +482,45 @@ h1{
 
   justify-content:center;
 
-  margin:0 auto 10px;
+  font-size:38px;
 
-  font-size:30px;
+  color:var(--navy);
 
 }
+
+.feature h3{
+
+  font-size:17px;
+
+  line-height:1.15;
+
+}
+
+/* =========================
+
+   SERVICES
+
+========================= */
 
 .services{
 
   background:var(--light);
 
-  padding:55px 5%;
+  padding:55px 0 65px;
+
+}
+
+.section-heading{
 
   text-align:center;
 
-}
+  width:min(1000px,92%);
 
-.section-label{
-
-  letter-spacing:5px;
-
-  font-size:14px;
-
-  font-weight:bold;
-
-  margin-bottom:12px;
+  margin:0 auto 35px;
 
 }
 
-.services h2{
-
-  font-family:Georgia,serif;
-
-  font-size:42px;
-
-  color:var(--dark);
-
-}
-
-.subtitle{
-
-  font-size:19px;
-
-  margin:12px 0 30px;
-
-  color:#536477;
-
-}
-
-.cards{
-
-  display:grid;
-
-  grid-template-columns:repeat(4,1fr);
-
-  gap:14px;
-
-  max-width:1200px;
-
-  margin:auto;
-
-}
-
-.card{
-
-  background:white;
-
-  border-radius:8px;
-
-  overflow:hidden;
-
-  box-shadow:0 4px 14px rgba(0,0,0,.08);
-
-}
-
-.card img{
-
-  width:100%;
-
-  height:190px;
-
-  object-fit:cover;
-
-  display:block;
-
-}
-
-.card-title{
-
-  background:var(--navy);
-
-  color:white;
-
-  padding:20px 8px;
-
-  font-weight:bold;
-
-  min-height:70px;
+.small-title{
 
   display:flex;
 
@@ -424,253 +528,599 @@ h1{
 
   justify-content:center;
 
+  gap:25px;
+
+  color:var(--navy);
+
+  font-size:13px;
+
+  letter-spacing:5px;
+
+  font-weight:800;
+
+  margin-bottom:15px;
+
 }
 
-.card-title span{
+.small-title:before,
 
-  color:var(--gold);
+.small-title:after{
 
-  margin-right:7px;
+  content:"";
+
+  width:80px;
+
+  height:2px;
+
+  background:var(--gold);
 
 }
+
+.section-heading h2{
+
+  font-family:Georgia,serif;
+
+  color:var(--navy);
+
+  font-size:48px;
+
+  line-height:1.05;
+
+}
+
+.section-heading p{
+
+  margin-top:12px;
+
+  color:#5e6977;
+
+  font-size:21px;
+
+}
+
+.cards{
+
+  width:min(1150px,94%);
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:repeat(4,1fr);
+
+  gap:16px;
+
+}
+
+.card{
+
+  border-radius:8px;
+
+  overflow:hidden;
+
+  background:#fff;
+
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.card-image{
+
+  height:215px;
+
+  background-size:cover;
+
+  background-position:center;
+
+}
+
+.card:nth-child(1) .card-image{
+
+  background-image:url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80");
+
+}
+
+.card:nth-child(2) .card-image{
+
+  background-image:url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80");
+
+}
+
+.card:nth-child(3) .card-image{
+
+  background-image:url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80");
+
+}
+
+.card:nth-child(4) .card-image{
+
+  background-image:url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80");
+
+}
+
+.card-bottom{
+
+  min-height:115px;
+
+  background:var(--navy);
+
+  color:#fff;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:15px;
+
+  padding:20px;
+
+}
+
+.card-icon{
+
+  color:#f0bd55;
+
+  font-size:32px;
+
+}
+
+.card-bottom strong{
+
+  font-size:15px;
+
+  line-height:1.35;
+
+}
+
+/* =========================
+
+   WHY CHOOSE US
+
+========================= */
 
 .why{
 
   display:grid;
 
-  grid-template-columns:1fr 1.2fr;
+  grid-template-columns:1fr 1.25fr;
 
-  min-height:410px;
+  min-height:500px;
 
 }
 
 .why-photo{
 
-  background:url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85") center/cover;
+  background:
+
+    url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=85")
+
+    center/cover;
 
 }
 
-.why-copy{
+.why-content{
 
-  background:var(--dark);
+  background:var(--navy);
 
   color:white;
 
-  padding:55px 7%;
-
-}
-
-.why-copy .section-label{
-
-  color:white;
-
-}
-
-.why-copy h2{
-
-  font-family:Georgia,serif;
-
-  font-size:42px;
-
-  line-height:1.05;
-
-  margin-bottom:18px;
-
-}
-
-.why-copy p{
-
-  line-height:1.6;
-
-  margin-bottom:25px;
-
-  max-width:650px;
-
-}
-
-.checks{
+  padding:65px 8%;
 
   display:flex;
 
-  gap:28px;
+  flex-direction:column;
 
-  flex-wrap:wrap;
-
-  margin-top:25px;
+  justify-content:center;
 
 }
 
-.check{
+.why-label{
 
-  font-weight:bold;
+  color:#fff;
 
-}
+  letter-spacing:5px;
 
-.check:before{
+  font-size:13px;
 
-  content:"✓";
+  font-weight:800;
 
-  color:var(--gold);
-
-  border:2px solid var(--gold);
-
-  border-radius:50%;
-
-  padding:3px 6px;
-
-  margin-right:7px;
+  margin-bottom:17px;
 
 }
 
-.contact{
-
-  display:grid;
-
-  grid-template-columns:1fr 1.5fr 1fr;
-
-  gap:35px;
-
-  padding:40px 7%;
-
-  align-items:center;
-
-}
-
-.contact-info{
-
-  line-height:2;
-
-  font-weight:600;
-
-}
-
-.tagline{
-
-  text-align:center;
-
-  color:var(--gold);
+.why h2{
 
   font-family:Georgia,serif;
 
-  font-style:italic;
+  font-size:46px;
 
-  font-size:25px;
+  line-height:1.02;
+
+  margin-bottom:20px;
 
 }
 
-.instagram{
+.why p{
 
-  margin-top:12px;
+  max-width:650px;
 
-  display:inline-block;
+  font-size:17px;
+
+  line-height:1.55;
+
+  margin-bottom:25px;
+
+}
+
+.white-btn{
+
+  background:#fff;
 
   color:var(--navy);
 
-  font-family:Arial,sans-serif;
+  padding:16px 28px;
 
-  font-style:normal;
+  border-radius:13px;
 
-  font-size:16px;
+  font-weight:800;
 
-  font-weight:bold;
+  width:max-content;
+
+  margin-bottom:35px;
 
 }
 
-footer{
+.trust-row{
 
-  background:var(--dark);
+  display:grid;
 
-  color:white;
+  grid-template-columns:repeat(3,1fr);
 
-  text-align:center;
+  gap:20px;
 
-  padding:22px;
+}
+
+.trust{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
 
   font-size:14px;
 
 }
 
-@media(max-width:800px){
+.check{
+
+  border:2px solid #e5b44e;
+
+  color:#e5b44e;
+
+  border-radius:50%;
+
+  width:30px;
+
+  height:30px;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  flex-shrink:0;
+
+}
+
+/* =========================
+
+   FOOTER
+
+========================= */
+
+.footer-main{
+
+  width:min(1150px,92%);
+
+  margin:auto;
+
+  padding:45px 0;
+
+  display:grid;
+
+  grid-template-columns:1fr 1.2fr 1fr;
+
+  gap:45px;
+
+  align-items:center;
+
+}
+
+.footer-logo .big-k{
+
+  font-size:76px;
+
+}
+
+.footer-logo .logo-words strong{
+
+  font-size:22px;
+
+}
+
+.footer-info{
+
+  font-size:17px;
+
+  line-height:2;
+
+  font-weight:700;
+
+}
+
+.footer-info span{
+
+  display:block;
+
+}
+
+.footer-social{
+
+  border-left:2px solid var(--gold);
+
+  min-height:150px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  align-items:center;
+
+  gap:20px;
+
+}
+
+.social-icons{
+
+  font-size:30px;
+
+}
+
+.footer-signature{
+
+  color:#9a6b22;
+
+  font-family:cursive;
+
+  font-size:24px;
+
+  transform:rotate(-7deg);
+
+}
+
+.copyright{
+
+  background:var(--navy);
+
+  color:#fff;
+
+  text-align:center;
+
+  padding:24px;
+
+  font-size:13px;
+
+}
+
+/* =========================
+
+   MOBILE
+
+========================= */
+
+@media(max-width:760px){
 
   .topbar{
 
-    justify-content:space-between;
+    min-height:72px;
 
-    text-align:left;
+  }
+
+  .topbar-inner{
+
+    display:block;
+
+    padding:12px 0;
 
     font-size:14px;
 
-  }
-
-  header{
-
-    padding:18px 6%;
+    line-height:1.5;
 
   }
 
-  nav a:not(.call-btn){
+  .top-phone{
 
-    display:none;
+    display:block;
 
-  }
-
-  .logo-k{
-
-    font-size:58px;
+    margin-top:6px;
 
   }
 
-  .logo-text strong{
+  .header-inner{
 
-    font-size:21px;
+    min-height:170px;
+
+    width:88%;
+
+    gap:15px;
 
   }
 
-  .logo-text span{
+  .logo{
 
-    font-size:12px;
+    width:auto;
+
+    flex:1;
+
+  }
+
+  .big-k{
+
+    font-size:62px;
+
+  }
+
+  .sparkle{
+
+    font-size:28px;
+
+  }
+
+  .logo-words strong{
+
+    font-size:20px;
+
+  }
+
+  .logo-words span{
+
+    font-size:11px;
 
     letter-spacing:3px;
 
   }
 
+  nav{
+
+    display:none;
+
+  }
+
   .call-btn{
 
-    padding:14px 16px;
+    padding:18px 20px;
+
+    font-size:18px;
 
   }
 
   .hero{
 
-    min-height:560px;
-
-    padding:70px 6%;
+    min-height:760px;
 
     background:
 
-      linear-gradient(rgba(255,255,255,.88),rgba(255,255,255,.78)),
+      linear-gradient(
+
+        180deg,
+
+        rgba(255,255,255,.97) 0%,
+
+        rgba(255,255,255,.94) 52%,
+
+        rgba(255,255,255,.60) 76%,
+
+        rgba(255,255,255,.45) 100%
+
+      ),
 
       url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=85");
 
     background-size:cover;
 
-    background-position:center;
+    background-position:center bottom;
 
   }
 
-  h1{
+  .hero-inner{
 
-    font-size:49px;
+    min-height:760px;
+
+    align-items:flex-start;
+
+    padding-top:90px;
+
+  }
+
+  .hero-copy{
+
+    width:100%;
+
+  }
+
+  .eyebrow{
+
+    font-size:16px;
+
+    letter-spacing:5px;
+
+    line-height:1.45;
+
+  }
+
+  .hero h1{
+
+    font-size:58px;
+
+    line-height:.98;
+
+    margin-bottom:35px;
+
+  }
+
+  .hero p{
+
+    font-size:24px;
+
+    line-height:1.55;
+
+    margin-bottom:35px;
+
+  }
+
+  .hero-buttons{
+
+    display:block;
+
+  }
+
+  .primary-btn,
+
+  .secondary-btn{
+
+    width:max-content;
+
+    max-width:100%;
+
+    min-height:72px;
+
+    margin-bottom:18px;
+
+    font-size:20px;
+
+  }
+
+  .signature{
+
+    display:none;
 
   }
 
   .features{
 
+    padding:70px 0;
+
+  }
+
+  .features-inner{
+
     grid-template-columns:repeat(2,1fr);
 
-    gap:28px 10px;
-
-    padding:35px 8%;
+    row-gap:55px;
 
   }
 
@@ -682,27 +1132,87 @@ footer{
 
   .feature:last-child{
 
-    grid-column:1/3;
+    grid-column:1 / 3;
 
   }
 
-  .services h2{
+  .icon-circle{
 
-    font-size:38px;
+    width:105px;
+
+    height:105px;
+
+    font-size:46px;
+
+  }
+
+  .feature h3{
+
+    font-size:22px;
+
+  }
+
+  .services{
+
+    padding:75px 0;
+
+  }
+
+  .small-title{
+
+    font-size:14px;
+
+  }
+
+  .small-title:before,
+
+  .small-title:after{
+
+    display:none;
+
+  }
+
+  .section-heading h2{
+
+    font-size:52px;
+
+    line-height:1.03;
+
+  }
+
+  .section-heading p{
+
+    font-size:23px;
 
   }
 
   .cards{
 
+    width:90%;
+
     grid-template-columns:repeat(2,1fr);
 
-    gap:12px;
+    gap:20px;
 
   }
 
-  .card img{
+  .card-image{
 
-    height:170px;
+    height:260px;
+
+  }
+
+  .card-bottom{
+
+    min-height:130px;
+
+    padding:17px;
+
+  }
+
+  .card-bottom strong{
+
+    font-size:17px;
 
   }
 
@@ -714,23 +1224,35 @@ footer{
 
   .why-photo{
 
-    min-height:330px;
+    min-height:420px;
 
   }
 
-  .why-copy{
+  .why-content{
 
-    padding:45px 7%;
-
-  }
-
-  .why-copy h2{
-
-    font-size:36px;
+    padding:60px 8%;
 
   }
 
-  .contact{
+  .why h2{
+
+    font-size:43px;
+
+  }
+
+  .why p{
+
+    font-size:18px;
+
+  }
+
+  .trust-row{
+
+    grid-template-columns:1fr;
+
+  }
+
+  .footer-main{
 
     grid-template-columns:1fr;
 
@@ -738,53 +1260,103 @@ footer{
 
   }
 
+  .footer-logo .logo-mark{
+
+    justify-content:center;
+
+  }
+
+  .footer-social{
+
+    border-left:0;
+
+    border-top:2px solid var(--gold);
+
+    padding-top:30px;
+
+  }
+
 }
 
-@media(max-width:450px){
+@media(max-width:430px){
 
-  .logo-k{
+  .header-inner{
+
+    width:92%;
+
+  }
+
+  .big-k{
+
+    font-size:52px;
+
+  }
+
+  .logo-words strong{
+
+    font-size:17px;
+
+  }
+
+  .logo-words span{
+
+    font-size:9px;
+
+  }
+
+  .call-btn{
+
+    font-size:16px;
+
+    padding:16px 15px;
+
+  }
+
+  .hero h1{
 
     font-size:50px;
 
   }
 
-  .logo-text strong{
-
-    font-size:18px;
-
-  }
-
-  .logo-text span{
-
-    font-size:10px;
-
-  }
-
-  h1{
-
-    font-size:44px;
-
-  }
-
   .hero p{
 
-    font-size:18px;
+    font-size:20px;
+
+  }
+
+  .section-heading h2{
+
+    font-size:43px;
 
   }
 
   .cards{
 
-    grid-template-columns:1fr 1fr;
+    gap:12px;
 
   }
 
-  .card img{
+  .card-image{
 
-    height:145px;
+    height:210px;
 
   }
 
-  .card-title{
+  .card-bottom{
+
+    min-height:115px;
+
+    padding:12px;
+
+  }
+
+  .card-icon{
+
+    font-size:23px;
+
+  }
+
+  .card-bottom strong{
 
     font-size:14px;
 
@@ -798,139 +1370,209 @@ footer{
 
 <body>
 
+<!-- TOP BAR -->
+
 <div class="topbar">
 
-  <span>FREE ESTIMATES - CALL TODAY!</span>
+  <div class="topbar-inner">
 
-  <a href="tel:7143338207">☎ (714) 333-8207</a>
+    <span>FREE ESTIMATES - CALL TODAY!</span>
+
+    <a class="top-phone" href="tel:17143338207">
+
+      ☎ &nbsp; (714) 333-8207
+
+    </a>
+
+  </div>
 
 </div>
 
+<!-- HEADER -->
+
 <header>
 
-  <div class="logo">
+  <div class="header-inner">
 
-    <div class="logo-k">K<span class="logo-star">✦</span></div>
+    <div class="logo">
 
-    <div class="logo-text">
+      <div class="logo-mark">
 
-      <strong>PREMIUM</strong>
+        <div class="big-k">K</div>
 
-      <span>CLEANING SERVICES</span>
+        <div class="sparkle">✦</div>
+
+        <div class="logo-words">
+
+          <strong>PREMIUM</strong>
+
+          <span>CLEANING</span>
+
+          <span>SERVICES</span>
+
+        </div>
+
+      </div>
 
     </div>
 
+    <nav>
+
+      <a href="#home">Home</a>
+
+      <a href="#services">Services</a>
+
+      <a href="#about">About</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+    <a class="call-btn" href="tel:17143338207">
+
+      ☎ &nbsp; Call Now
+
+    </a>
+
   </div>
-
-  <nav>
-
-    <a href="#home">Home</a>
-
-    <a href="#services">Services</a>
-
-    <a href="#about">About</a>
-
-    <a href="#contact">Contact</a>
-
-    <a class="call-btn" href="tel:7143338207">☎ Call Now</a>
-
-  </nav>
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 
-  <div class="hero-content">
+  <div class="hero-inner">
 
-    <div class="eyebrow">
+    <div class="hero-copy">
 
-      CLEAN SPACES. BRIGHTER BUSINESS.
+      <div class="eyebrow">
 
-    </div>
+        CLEAN SPACES. BRIGHTER BUSINESS.
 
-    <h1>Your Premium<br>Cleaning Solution</h1>
+      </div>
 
-    <p>
+      <h1>
 
-      Professional residential &amp; commercial cleaning services
+        Your Premium<br>
 
-      in Los Angeles and surrounding areas.
+        Cleaning Solution
 
-    </p>
+      </h1>
 
-    <div class="hero-buttons">
+      <p>
 
-      <a class="primary-btn" href="tel:7143338207">
+        Professional residential &amp; commercial
 
-        ☎ (714) 333-8207
+        cleaning services in Los Angeles and
 
-      </a>
+        surrounding areas.
 
-      <a class="secondary-btn" href="mailto:kpremiumla@gmail.com?subject=Free%20Cleaning%20Estimate">
+      </p>
 
-        Get a Free Estimate
+      <div class="hero-buttons">
 
-      </a>
+        <a class="primary-btn" href="tel:17143338207">
+
+          ☎ &nbsp; (714) 333-8207
+
+        </a>
+
+        <a class="secondary-btn" href="#contact">
+
+          Get a Free Estimate
+
+        </a>
+
+      </div>
+
+      <div class="signature">
+
+        Let's Keep<br>
+
+        Your Business Shining!
+
+      </div>
 
     </div>
 
   </div>
 
 </section>
+
+<!-- FEATURES -->
 
 <section class="features">
 
-  <div class="feature">
+  <div class="features-inner">
 
-    <div class="icon">✓</div>
+    <div class="feature">
 
-    Licensed<br>&amp; Insured
+      <div class="icon-circle">✓</div>
 
-  </div>
+      <h3>Licensed<br>&amp; Insured</h3>
 
-  <div class="feature">
+    </div>
 
-    <div class="icon">♧</div>
+    <div class="feature">
 
-    Eco<br>Friendly
+      <div class="icon-circle">♧</div>
 
-  </div>
+      <h3>Eco<br>Friendly</h3>
 
-  <div class="feature">
+    </div>
 
-    <div class="icon">🐾</div>
+    <div class="feature">
 
-    Pet<br>Friendly
+      <div class="icon-circle">🐾</div>
 
-  </div>
+      <h3>Pet<br>Friendly</h3>
 
-  <div class="feature">
+    </div>
 
-    <div class="icon">◷</div>
+    <div class="feature">
 
-    Same Day<br>Service
+      <div class="icon-circle">◷</div>
 
-  </div>
+      <h3>Same Day<br>Service</h3>
 
-  <div class="feature">
+    </div>
 
-    <div class="icon">☆</div>
+    <div class="feature">
 
-    5-Star<br>Rated
+      <div class="icon-circle">☆</div>
+
+      <h3>5-Star<br>Rated</h3>
+
+    </div>
 
   </div>
 
 </section>
 
+<!-- SERVICES -->
+
 <section class="services" id="services">
 
-  <div class="section-label">OUR SERVICES</div>
+  <div class="section-heading">
 
-  <h2>Professional Cleaning for Every Space</h2>
+    <div class="small-title">
 
-  <div class="subtitle">
+      OUR SERVICES
 
-    Reliable. Detailed. Trusted.
+    </div>
+
+    <h2>
+
+      Professional Cleaning for Every Space
+
+    </h2>
+
+    <p>
+
+      Reliable. Detailed. Trusted.
+
+    </p>
 
   </div>
 
@@ -938,15 +1580,13 @@ footer{
 
     <div class="card">
 
-      <img
+      <div class="card-image"></div>
 
-        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80"
+      <div class="card-bottom">
 
-        alt="Commercial cleaning">
+        <span class="card-icon">▥</span>
 
-      <div class="card-title">
-
-        <span>✦</span> COMMERCIAL CLEANING
+        <strong>COMMERCIAL<br>CLEANING</strong>
 
       </div>
 
@@ -954,15 +1594,13 @@ footer{
 
     <div class="card">
 
-      <img
+      <div class="card-image"></div>
 
-        src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+      <div class="card-bottom">
 
-        alt="Move in and move out cleaning">
+        <span class="card-icon">▯</span>
 
-      <div class="card-title">
-
-        <span>✦</span> MOVE-IN / MOVE-OUT
+        <strong>MOVE-IN /<br>MOVE-OUT</strong>
 
       </div>
 
@@ -970,15 +1608,13 @@ footer{
 
     <div class="card">
 
-      <img
+      <div class="card-image"></div>
 
-        src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"
+      <div class="card-bottom">
 
-        alt="Post construction cleaning">
+        <span class="card-icon">♜</span>
 
-      <div class="card-title">
-
-        <span>✦</span> POST CONSTRUCTION
+        <strong>POST<br>CONSTRUCTION</strong>
 
       </div>
 
@@ -986,15 +1622,13 @@ footer{
 
     <div class="card">
 
-      <img
+      <div class="card-image"></div>
 
-        src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80"
+      <div class="card-bottom">
 
-        alt="Office cleaning">
+        <span class="card-icon">♧</span>
 
-      <div class="card-title">
-
-        <span>✦</span> OFFICE CLEANING
+        <strong>OFFICE<br>CLEANING</strong>
 
       </div>
 
@@ -1004,17 +1638,23 @@ footer{
 
 </section>
 
+<!-- WHY CHOOSE US -->
+
 <section class="why" id="about">
 
   <div class="why-photo"></div>
 
-  <div class="why-copy">
+  <div class="why-content">
 
-    <div class="section-label">WHY CHOOSE US</div>
+    <div class="why-label">
+
+      WHY CHOOSE US
+
+    </div>
 
     <h2>
 
-      More Than Clean.<br>
+      More Than Clean<br>
 
       It’s a Healthier, Happier Space
 
@@ -1022,33 +1662,51 @@ footer{
 
     <p>
 
-      At K Premium Cleaning Services, we take pride in delivering
+      At K Premium Cleaning Services, we take pride in
 
-      high-quality, detail-oriented cleaning with a personal touch.
+      delivering high-quality, detail-oriented cleaning
 
-      Whether it's your home, office, or a new construction space,
+      with a personal touch. Whether it’s your home,
 
-      we make it spotless, safe, and welcoming — and yes,
+      office, or a new construction space, we make it
 
-      we're pet friendly!
+      spotless, safe, and welcoming — and yes, we’re
+
+      pet friendly!
 
     </p>
 
-    <a class="secondary-btn"
+    <a class="white-btn" href="#contact">
 
-       href="mailto:kpremiumla@gmail.com?subject=Free%20Cleaning%20Estimate">
-
-      Get a Free Estimate ›
+      Get a Free Estimate &nbsp; ›
 
     </a>
 
-    <div class="checks">
+    <div class="trust-row">
 
-      <div class="check">Trusted &amp; Reliable</div>
+      <div class="trust">
 
-      <div class="check">Attention to Detail</div>
+        <span class="check">✓</span>
 
-      <div class="check">Customer Satisfaction</div>
+        <span>Trusted<br>&amp; Reliable</span>
+
+      </div>
+
+      <div class="trust">
+
+        <span class="check">✓</span>
+
+        <span>Attention<br>to Detail</span>
+
+      </div>
+
+      <div class="trust">
+
+        <span class="check">✓</span>
+
+        <span>Customer<br>Satisfaction</span>
+
+      </div>
 
     </div>
 
@@ -1056,61 +1714,99 @@ footer{
 
 </section>
 
-<section class="contact" id="contact">
+<!-- FOOTER -->
 
-  <div class="logo">
+<footer id="contact">
 
-    <div class="logo-k">K<span class="logo-star">✦</span></div>
+  <div class="footer-main">
 
-    <div class="logo-text">
+    <div class="footer-logo">
 
-      <strong>PREMIUM</strong>
+      <div class="logo-mark">
 
-      <span>CLEANING SERVICES</span>
+        <div class="big-k">K</div>
+
+        <div class="sparkle">✦</div>
+
+        <div class="logo-words">
+
+          <strong>PREMIUM</strong>
+
+          <span>CLEANING</span>
+
+          <span>SERVICES</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-info">
+
+      <span>
+
+        ☎ &nbsp;
+
+        <a href="tel:17143338207">
+
+          (714) 333-8207
+
+        </a>
+
+      </span>
+
+      <span>
+
+        ✉ &nbsp;
+
+        <a href="mailto:kpremiumla@gmail.com">
+
+          kpremiumla@gmail.com
+
+        </a>
+
+      </span>
+
+      <span>
+
+        ● &nbsp; Los Angeles, CA
+
+      </span>
+
+      <span>
+
+        &nbsp;&nbsp;&nbsp;&nbsp; SERVING SURROUNDING AREAS
+
+      </span>
+
+    </div>
+
+    <div class="footer-social">
+
+      <div class="social-icons">
+
+        ◎
+
+      </div>
+
+      <div class="footer-signature">
+
+        Let's Keep<br>
+
+        Your Business Shining!
+
+      </div>
 
     </div>
 
   </div>
 
-  <div class="contact-info">
+  <div class="copyright">
 
-    ☎ <a href="tel:7143338207">(714) 333-8207</a><br>
-
-    ✉ <a href="mailto:kpremiumla@gmail.com">kpremiumla@gmail.com</a><br>
-
-    📍 Los Angeles, CA<br>
-
-    SERVING SURROUNDING AREAS
+    © 2024 K Premium Cleaning Services. All rights reserved.
 
   </div>
-
-  <div class="tagline">
-
-    Let's Keep<br>
-
-    Your Business Shining!
-
-    <br>
-
-    <a class="instagram"
-
-       href="https://www.instagram.com/"
-
-       target="_blank"
-
-       rel="noopener">
-
-       ◎ Instagram
-
-    </a>
-
-  </div>
-
-</section>
-
-<footer>
-
-  © 2026 K Premium Cleaning Services. All rights reserved.
 
 </footer>
 
